@@ -1,4 +1,4 @@
 aws-cdk.core~=1.0
 aws-cdk.aws-s3~=1.0
-#aws-cdk.aws-stepfunctions
-#aws_stepfunctions_tasks
+aws-cdk.aws-stepfunctions
+aws-cdk.aws_stepfunctions_tasks
