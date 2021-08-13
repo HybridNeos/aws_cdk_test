@@ -1,2 +1,2 @@
-aws-cdk.core
--e .
+aws-cdk.core~=1.0
+aws-cdk.aws-s3~=1.0
