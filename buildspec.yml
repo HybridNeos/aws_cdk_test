@@ -7,7 +7,6 @@ phases:
   pre_build:
     commands:
       - cd stepfunctions
-      - cdk init app --language python
       - npx cdk bootstrap aws://319713307186/us-east-1 --cloudformation-execution-policies arn:aws:iam::aws:policy/AdministratorAccess aws://319713307186/us-east-1
   build:
     commands:
