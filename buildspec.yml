@@ -4,7 +4,7 @@ phases:
     commands:
       - npm install -g aws-cdk
       - cdk --version
-  prebuild:
+  pre_build:
     commands:
       - cd stepfunctions
       - cdk init app --language python
@@ -14,3 +14,6 @@ phases:
       - cdk ls
       - cdk diff
       - cdk deploy --require-approval never aws-stepfunctions-integ --profile free
+  post_build:
+    commands:
+      - echo "Finished"
