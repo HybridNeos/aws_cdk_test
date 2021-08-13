@@ -12,7 +12,4 @@ phases:
       - cdk bootstrap aws://319713307186/us-east-1 --cloudformation-execution-policies arn:aws:iam::aws:policy/AdministratorAccess aws://319713307186/us-east-1
   build:
     commands:
-      - cdk deploy --require-approval never aws-stepfunctions-integ --profile free
-  post_build:
-    commands:
-      - echo "Finished"
+      - cdk deploy --require-approval never aws-stepfunctions-integ
