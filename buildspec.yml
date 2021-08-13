@@ -3,6 +3,7 @@ phases:
   install:
     commands:
       - npm install -g aws-cdk
+      - npm i -g aws-cdk --force # maybe updates it?
       - cdk --version
   pre_build:
     commands:
