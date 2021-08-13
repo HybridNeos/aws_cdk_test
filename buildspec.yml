@@ -7,9 +7,9 @@ phases:
     commands:
       - cd stepfunctions
       - cdk init app --language python
-      - npx cdk bootstrap aws://319713307186/us-east-1 --profile free --cloudformation-execution-policies arn:aws:iam::aws:policy/AdministratorAccess aws://319713307186/us-east-1
+      - npx cdk bootstrap aws://319713307186/us-east-1 --cloudformation-execution-policies arn:aws:iam::aws:policy/AdministratorAccess aws://319713307186/us-east-1
   build:
     commands:
-      - cdk ls --profile free
-      - cdk diff --profile free
-      - npx cdk deploy --require-approval never aws-stepfunctions-integ --profile free
+      - cdk ls
+      - cdk diff
+      - cdk deploy --require-approval never aws-stepfunctions-integ --profile free
